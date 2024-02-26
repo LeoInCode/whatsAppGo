@@ -1,4 +1,4 @@
-package handler
+package main
 
 import (
 	"net/http"
@@ -23,11 +23,7 @@ func CORSMiddleware() gin.HandlerFunc {
 
 func Handler(c *gin.Context) {
 	gin.SetMode(gin.ReleaseMode)
-	app := config.App()
-	env := app.Env
 	gin := gin.Default()
 	gin.Use(CORSMiddleware())
-	db := app.Db
-	route.Setup(env, db, gin)
 	gin.ServeHTTP(c.Writer, c.Request)
 }
