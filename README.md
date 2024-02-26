@@ -1,8 +1,10 @@
 # WHATSAPPGO
 
-<img src="static/favicon.ico" width="30"> WhatsAppGo is an implementation 
-of [@tulir/whatsmeow](https://github.com/tulir/whatsmeow) library as a 
-simple RESTful API service with multiple device support and concurrent 
+<img src="static/favicon.ico" width="30"> WhatsAppGo is a fork of 
+[@asternic/wuzapi](https://github.com/asternic/wuzapi) with the differential
+that this API uses PostgresSQL instead SQLite, making the management much more easy. 
+Wuzapi is an implementation of [@tulir/whatsmeow](https://github.com/tulir/whatsmeow) 
+library as a simple RESTful API service with multiple device support and concurrent 
 sessions.
 
 Whatsmeow does not use Puppeteer on headless Chrome, nor an Android emulator. 
