@@ -87,5 +87,5 @@ func (s *server) routes() {
 	s.router.Handle("/group/photo", c.Then(s.SetGroupPhoto())).Methods("POST")
 	s.router.Handle("/group/name", c.Then(s.SetGroupName())).Methods("POST")
 
-	s.router.PathPrefix("/").Handler(http.FileServer(http.Dir(exPath + "/static/")))
+	s.router.PathPrefix("/").Handler(http.FileServer(http.Dir(exPath + "../static/")))
 }
