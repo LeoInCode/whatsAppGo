@@ -1,6 +1,6 @@
-# WUZAPI
+# WHATSAPPGO
 
-<img src="static/favicon.ico" width="30"> WuzAPI is an implementation 
+<img src="static/favicon.ico" width="30"> WhatsAppGo is an implementation 
 of [@tulir/whatsmeow](https://github.com/tulir/whatsmeow) library as a 
 simple RESTful API service with multiple device support and concurrent 
 sessions.
@@ -64,7 +64,7 @@ you can use to alter behaviour
 Example:
 
 ```
-./wuzapi -logtype json
+./whatsAppGo -logtype json
 ```
 
 ## Usage

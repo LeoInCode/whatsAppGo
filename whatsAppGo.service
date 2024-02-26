@@ -1,5 +1,5 @@
 [Unit]
-Description=Wuzapi
+Description=WhatsAppGo
 After=network-online.target
 Wants=network-online.target systemd-networkd-wait-online.service
 
@@ -10,7 +10,7 @@ StartLimitBurst=5
 Restart=on-failure
 RestartSec=5s
 
-ExecStart=/usr/local/wuzapi/wuzapi -wadebug DEBUG
+ExecStart=/usr/local/whatsAppGo/whatsAppGo -wadebug DEBUG
 
 [Install]
 WantedBy=multi-user.target
